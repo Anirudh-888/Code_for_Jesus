@@ -1,1 +1,8 @@
 print("Thanks for this repo Lord Christ")
+print("Thanks from Preetham")
+print("Thanks from sarathi")
+print("Thanks from Jagan")
+print("Thanks from Deek")
+print("Thanks from Mad")
+print("Thanks from Sanj")
+print("Thanks from Ani")
