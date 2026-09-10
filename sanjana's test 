@@ -1,0 +1,2 @@
+str= " sanjana"
+print(str[1:5])
