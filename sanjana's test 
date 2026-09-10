@@ -1,2 +1,4 @@
 str= " sanjana"
-print(str[1:5])
+print(str[0:5])
+print(str[1:4])
+print(str[2:3])
