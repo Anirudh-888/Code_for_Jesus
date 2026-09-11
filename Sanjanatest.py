@@ -14,4 +14,5 @@ print(capital)
 print(title)
 print(lower)
 #stringfunctions
-#The date of the test is 11/09/2026
+#The date of the test is 11/09/2026 
+# It is correct from Anirudh mentor 3p

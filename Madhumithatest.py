@@ -3,3 +3,13 @@ print(str1[0:5])
 print(str1[7:12])
 print(str1[13:16])
 print(str1[17:29])
+
+#11/9/26
+str="DEeKsha"
+capital=str.upper()
+lower=capital.lower()
+title=lower.title()
+print(str)
+print(capital)
+print(lower)
+print(title)
