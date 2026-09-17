@@ -39,24 +39,4 @@ print(u)
 print(l)
 print(isu)
 print(isl)
-def star(name):
-    for i in name:
-        if i=="a"or i=="e"or i=="i"or i=="o"or i=="u":
-            i="..•"
-        print(i,end=" ")    
-star("sanjana")
-def ulta():
-    str=input("enter your name")
-    for i in range(-1,-len(str)-1,-1):
-        print(str[i],end="")
-ulta()
-str="sanjana"
-u=str.upper()
-l=str.lower()
-isu=str.isupper()
-isl=str.islower()
-print(u)
-print(l)
-print(isu)
-print(isl)
-#tge date of test is 17/09/26
+#the date of test is 17/09/26
