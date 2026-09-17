@@ -20,3 +20,13 @@ print(capital)
 print(string)
 print(title)
 print(lower)
+#17/9/26
+def vowels(name):
+    for i in name:
+        if i=="a" or i=="e" or i=="i" or i=="o" or i=="u":
+            i="*"
+        print(i,end="")    
+vowels("madhu")        
+
+string="madhu"        
+print(string.upper())
