@@ -17,8 +17,6 @@ print(lower)
 #The date of the test is 11/09/2026 
 # It is correct from Anirudh mentor 3p
 
-
-
 def star(name):
     for i in name:
         if i=="a"or i=="e"or i=="i"or i=="o"or i=="u":
