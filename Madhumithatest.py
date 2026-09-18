@@ -13,3 +13,13 @@ print(str)
 print(capital)
 print(lower)
 print(title)
+
+#17/9/26
+str="abcdefghijklmnopqrstuvwsyz"
+print(str.upper())
+def voweltostar (name):
+    for i in name:
+        if i=="a" or i=="e" or i=="i" or i=="o" or i=="u" :
+            i="*"
+        print(i,end="")    
+voweltostar("abcdefghijklmnopqrstuvwsyz")   
