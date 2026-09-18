@@ -36,4 +36,24 @@ defparameter(sen):
         if i=="an" or i=="the" or i=="my":
             i="_"
         print(i,end="")    
-parameter("my name is an given name by the ")        
+parameter("my name is an given name by the ")      
+#18/09/2026 test
+#1 question 
+ch=input("enter your string=")
+for i in range(0,11):
+    print(ch)
+#4 question
+vowels=input("enter your name=")
+for i in vowels:
+    if i=="a" or i=="e" or i=="i" or i=="o" or i=="u":
+        i="*"
+    print(i,end="")  
+#5 question
+hyphen=input("enter your paragraph in one line=")
+for i in hyphen:
+    if i==" ":
+        i="-" 
+    print(i,end="")
+           
+         
+
