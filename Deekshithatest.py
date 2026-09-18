@@ -30,3 +30,10 @@ vowels("madhu")
 
 string="madhu"        
 print(string.upper())
+#18/09/2026
+defparameter(sen):
+    for i in sen:
+        if i=="an" or i=="the" or i=="my":
+            i="_"
+        print(i,end="")    
+parameter("my name is an given name by the ")        
