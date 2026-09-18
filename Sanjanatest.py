@@ -38,3 +38,30 @@ print(l)
 print(isu)
 print(isl)
 #the date of test is 17/09/26
+
+str=input("enter your sentence")
+char=input("enter the character you want to count")
+print(str.count(char))
+
+def reverse():
+    str=input("enter your name")
+    for i in range(-1,-len(str)-1,-1):
+        print(str[i],end=" ")
+reverse()
+def hypen(str):
+    for i in str:
+        if i==" ":
+            i="-"
+        print(i,end="")    
+hypen("Jesus is lord")
+
+str=input("enter the sentence")
+count=0
+for i in str:
+    if i in "aeiouAEIOU":
+        count+=1
+    else:
+        count+=0    
+print(count)    
+
+#date of test 18/9/2026
