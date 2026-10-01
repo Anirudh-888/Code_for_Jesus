@@ -1,0 +1,66 @@
+chips=10
+chocopie=12
+tshrit=60
+trousers=100
+Gunshoot=5
+bowling=3
+points=int(input("enter the points you have"))
+snackpoints=points/2
+gamepoints=points/2
+clotespoints=points/2
+choice=int(input("enter the choice what you want to purchase 1.snacks 2.clothes 3.games   "))
+if choice==1:
+    thindi=int(input("enter your choice what snack you need 1.chips 2.chocopie  "))
+    if thindi==1:
+        quantity=int(input("enter the no of chips you need "))
+        if quantity*chips>snackpoints:
+            print("your in shorage of amount")
+        else:    
+            print("amount is ",quantity*chips)
+            print("remaining points",snackpoints-(quantity*chips))
+    elif thindi==2:
+        quantity=int(input("enter the no of chocopie you need "))
+        if quantity*chocopie>snackpoints:
+            print("your in shorage of amount")
+        else:
+            print("amount is ",quantity*chocopie)
+            print("remaining points",snackpoints-(quantity*chocopie))
+    else:
+        print("enter only suggested choice")    
+elif choice==2:
+    batlu=int(input("enter your choice what snack you need 1.tshirt 2.trousers  "))
+    if batlu==1:
+        quantity=int(input("enter the no of tshirt you need "))
+        if quantity*tshirt>clotespoints:
+            print("your in shortage of amount")
+        else:    
+            print("amount is ",quantity*tshirt)
+            print("remaining amount",clotespoints-(quantity*tshirt))
+    elif batlu==2:
+        quantity=int(input("enter the no of trousers you need "))
+        if quantity*trousers>clotespoints:
+            print("your in shortage of amount")
+        else:
+            print("amount is ",quantity*trousers)
+            print("remaining amount",clotespoints-(quantity*trousers))
+    else:
+        print("enter only suggested choice")    
+elif choice==3:
+    aatlu=int(input("enter your choice what snack you need 1.Gunshoot 2.bowling "))
+    if aatlu==1:
+        quantity=int(input("enter the no of Gunshoot you need "))
+        if quantity*Gunshoot>gamepoints:
+            print("You are having short of points") 
+        else:    
+           print("amount is ",quantity*Gunshoot)
+           print("remaining amount",gamepoints-(quantity*Gunshoot))
+    elif aatlu==2:
+        quantity=int(input("enter the no of bowling you need "))
+        if quantity*bowling>gamepoints:
+            print("your in shortage of point")
+        else:
+            print("amount is ",quantity*bowling)
+            print("remaining amount",gamepoints-(quantity*bowling))
+    else:
+        print("enter only suggested choice")       
+        
