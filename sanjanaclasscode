@@ -64,3 +64,33 @@ elif choice==3:
     else:
         print("enter only suggested choice")       
         
+
+
+tick=int(input("enter no of the ticket"))
+stops=int(input("enter your stops"))
+gender=input("enter your gender 2.female and others 1.male")
+if gender=="1":
+    if stops=="1":
+        print(f"cost of ticket is{tick*6}")
+    elif stops>=2  and stops<3:
+        print(f"cost of ticket is{tick*12}")
+    elif stops>=3 and stops<=10:
+        print(f"cost of ticket is {tick*18}")
+    elif stops>10:
+        print(f"cost of ticket is{tick*28}")
+elif gender=="2":
+    print("you can enjoy free trip")
+else: 
+    print("enter proper choice")   
+     
+# I couldn't think about stops and tick multiply in that amount 
+
+
+sentence=input("enter your sentence")
+print(len(sentence))
+print(sentence[0])
+print(sentence[-1])
+if sentence in "python":
+    print("it is present in sentence")
+else:
+    print("it is not there in sentence")    
