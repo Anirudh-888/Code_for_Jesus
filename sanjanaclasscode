@@ -143,4 +143,34 @@ if user==username:
     if passw==password:
         print("login successfully")
         
+
+
+standard=1500
+deluxe=2500
+suit=4000
+name=input("enter your name:-")
+type=int(input(("enter the type of room do you need 1.standard 2.deluxe 3.suit")))
+if type==1:
+    nights=int(input("enter the no of nights "))
+    cost=standard*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name} you have ordered for {nights} nights so you receive discount")
+        print(f"the discounted cost is",cost-(10/100)*cost)
+elif type==2:
+    nights=int(input("enter the no of nights "))
+    cost=deluxe*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name} you have ordered for {nights} nights so you receive discount")  
+        print(f"the discounted cost is",cost-(10/100)*cost)
+elif type==3:
+    nights=int(input("enter the no of nights "))
+    cost=suit*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name}you have ordered for {nights} nights so you receive discount")
+        print(f"the discounted cost is",cost-(10/100)*cost)
+else:
+    print("enter proper room type") 
    
