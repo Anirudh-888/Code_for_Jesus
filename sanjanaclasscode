@@ -93,4 +93,54 @@ print(sentence[-1])
 if sentence in "python":
     print("it is present in sentence")
 else:
-    print("it is not there in sentence")    
+    print("it is not there in sentence") 
+
+
+
+smallp=150
+mediump=250
+largep=350
+small=int(input("enter the no of small pizza"))
+medium=int(input("enter the no of medium pizza"))
+big=int(input("enter the no of large pizza"))
+spc=smallp*small
+mpc=mediump*medium
+lpc=largep*big
+totalcost=spc+mpc+lpc
+print("totalcost is ",totalcost)        
+if totalcost>1000:
+    print("your discounted prize is ",totalcost-100)
+percentage=int(input("enter your percentage"))
+if percentage>=75:
+    print("step 1 sucessful")
+    maths=int(input("did you study math 1.yes 2.no"))
+    if maths==1:
+        print("step 2 successful ")
+        age=int(input("enter your age"))  
+        if age>=17:
+            print("your eligible to study")
+        else:
+            print("your age is below")
+    else:
+        print("requrement  failed")  
+else:
+    print("your percentage is less than the requirements")  
+print("your daily data limit is 2GB")    
+datausage=float(input("enter your data used today "))
+data=datausage*1024
+if data<=1024:
+    print("low data usage")
+elif data>1024 and data<=2048:
+    print("medium usage")
+elif data>2048:
+    print("data limit exceeded")    
+    
+username="student"
+password="python123"
+user=input("enter your username")
+if user==username:
+    passw=input("enter your password")
+    if passw==password:
+        print("login successfully")
+        
+   
