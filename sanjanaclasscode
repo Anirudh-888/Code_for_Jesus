@@ -64,3 +64,113 @@ elif choice==3:
     else:
         print("enter only suggested choice")       
         
+
+
+tick=int(input("enter no of the ticket"))
+stops=int(input("enter your stops"))
+gender=input("enter your gender 2.female and others 1.male")
+if gender=="1":
+    if stops=="1":
+        print(f"cost of ticket is{tick*6}")
+    elif stops>=2  and stops<3:
+        print(f"cost of ticket is{tick*12}")
+    elif stops>=3 and stops<=10:
+        print(f"cost of ticket is {tick*18}")
+    elif stops>10:
+        print(f"cost of ticket is{tick*28}")
+elif gender=="2":
+    print("you can enjoy free trip")
+else: 
+    print("enter proper choice")   
+     
+# I couldn't think about stops and tick multiply in that amount 
+
+
+sentence=input("enter your sentence")
+print(len(sentence))
+print(sentence[0])
+print(sentence[-1])
+if sentence in "python":
+    print("it is present in sentence")
+else:
+    print("it is not there in sentence") 
+
+
+
+smallp=150
+mediump=250
+largep=350
+small=int(input("enter the no of small pizza"))
+medium=int(input("enter the no of medium pizza"))
+big=int(input("enter the no of large pizza"))
+spc=smallp*small
+mpc=mediump*medium
+lpc=largep*big
+totalcost=spc+mpc+lpc
+print("totalcost is ",totalcost)        
+if totalcost>1000:
+    print("your discounted prize is ",totalcost-100)
+percentage=int(input("enter your percentage"))
+if percentage>=75:
+    print("step 1 sucessful")
+    maths=int(input("did you study math 1.yes 2.no"))
+    if maths==1:
+        print("step 2 successful ")
+        age=int(input("enter your age"))  
+        if age>=17:
+            print("your eligible to study")
+        else:
+            print("your age is below")
+    else:
+        print("requrement  failed")  
+else:
+    print("your percentage is less than the requirements")  
+print("your daily data limit is 2GB")    
+datausage=float(input("enter your data used today "))
+data=datausage*1024
+if data<=1024:
+    print("low data usage")
+elif data>1024 and data<=2048:
+    print("medium usage")
+elif data>2048:
+    print("data limit exceeded")    
+    
+username="student"
+password="python123"
+user=input("enter your username")
+if user==username:
+    passw=input("enter your password")
+    if passw==password:
+        print("login successfully")
+        
+
+
+standard=1500
+deluxe=2500
+suit=4000
+name=input("enter your name:-")
+type=int(input(("enter the type of room do you need 1.standard 2.deluxe 3.suit")))
+if type==1:
+    nights=int(input("enter the no of nights "))
+    cost=standard*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name} you have ordered for {nights} nights so you receive discount")
+        print(f"the discounted cost is",cost-(10/100)*cost)
+elif type==2:
+    nights=int(input("enter the no of nights "))
+    cost=deluxe*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name} you have ordered for {nights} nights so you receive discount")  
+        print(f"the discounted cost is",cost-(10/100)*cost)
+elif type==3:
+    nights=int(input("enter the no of nights "))
+    cost=suit*nights
+    print(f"{name} your total cost for {nights} nights is {cost}")
+    if nights>5:
+        print(f"{name}you have ordered for {nights} nights so you receive discount")
+        print(f"the discounted cost is",cost-(10/100)*cost)
+else:
+    print("enter proper room type") 
+   
