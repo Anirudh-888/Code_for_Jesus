@@ -1,0 +1,3 @@
+Name: Preetham Marks1 :99.0 Marks2:99.0 Marks3:100.0. Total Marks of the student: 298.0
+Name: Sarathi Marks1 :98.0 Marks2:99.0 Marks3:100.0. Total Marks of the student: 297.0
+Name: Goat maah maaah Jagan Marks1 :96.0 Marks2:96.0 Marks3:99.0. Total Marks of the student: 291.0
