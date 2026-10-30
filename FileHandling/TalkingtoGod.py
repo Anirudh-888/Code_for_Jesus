@@ -29,3 +29,4 @@ elif choice==2:
             print("QT notebook after writing the todays qt",updatedcontent)
 else:
      print("Enter the proper choice between QT and meditation")
+     print("The choices are 1 and 2")
