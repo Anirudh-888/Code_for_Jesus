@@ -1,0 +1,31 @@
+name=input("Enter your name")
+print(f"Welcome {name} to your personal God's space")
+choice=int(input("Enter your choice 1. Meditation 2. QT"))
+if choice==1:
+    with open("meditation.txt","a+") as meditation:
+        content=meditation.read()
+        print("The previous meditation till date",content)
+        scripture=input("Enter the verses that you meditated today")
+        obsersvation=input("Enter what the Lord spoke to you")
+        application=input("What will you apply in the life from this talking with God")
+        prayer=input("Enter your prayer for following what the Lord taught you!")
+        data=("SCRIPTURE:"+"\n"+scripture+"\n"+"OBSEVATION"+"\n"+obsersvation+"\n"+"APPLICATION:"+"\n"+application+"\n"+"PRAYER:"+"\n"+prayer)
+        meditation.write(data)
+        meditation.seek(0)
+        updatedcontent=meditation.read()
+        print("Meditation notebook after writing the todays meditation",updatedcontent)
+elif choice==2:
+    with open("qt.txt","a+") as qt:
+            content=qt.read()
+            print("The previous meditation till date",content)
+            scripture=input("Enter the verses that ma'am told today")
+            obsersvation=input("Enter what the Lord spoke to you through ma'am")
+            application=input("What will you apply in the life from this talking with God")
+            prayer=input("Enter your prayer for following what the Lord taught you!")
+            data=("SCRIPTURE:"+"\n"+scripture+"\n"+"OBSEVATION"+"\n"+obsersvation+"\n"+"APPLICATION:"+"\n"+application+"\n"+"PRAYER:"+"\n"+prayer)
+            qt.write(data)
+            qt.seek(0)
+            updatedcontent=qt.read()
+            print("QT notebook after writing the todays qt",updatedcontent)
+else:
+     print("Enter the proper choice between QT and meditation")
