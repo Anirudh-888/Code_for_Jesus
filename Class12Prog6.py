@@ -16,5 +16,3 @@ with open("prog7a.txt","a+") as prog7a:
             prog7b.write(data)
 topperlist=prog7b.read()
 print("Topper list")
-            
-
